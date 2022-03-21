@@ -14,19 +14,54 @@
 
             <h1>Clase 6</h1>
 
-            <form action="AltaUsuario.html">
+            <fieldset>
+                <legend>Alta de usuario</legend>
 
-                <input type="file" name="dni-frente">
+                <form action="AltaUsuario.html" method="post">
 
-                <input type="hidden" value="valoroculto" name="campohidden">
+                    <input type="file" name="dni-frente">
+    
+                    <input type="hidden" value="valoroculto" name="campohidden">
+    
+                    <input type="url" name="url" placeholder="htps://dominio.com.ar">
+    
+                    <input type="text" name="nombre" placeholder="Ingrese algo">
+    
+                    <textarea name="info-extra" cols="50" rows="5"></textarea>
+    
+                    <input type="submit" value="Enviar">
+    
+                    <select multiple name="selectMultiple">
+    
+                        <optgroup label="Animales">
+    
+                            <option>Leon</option>
+                            <option>Tigre</option>
+    
+                        </optgroup>
+    
+                        <optgroup label="Colores">
+    
+                            <option>Rojo</option>
+                            <option>Verde</option>
+                            <option>Azul</option>
+    
+                        </optgroup>
+    
+                    </select>
 
-                <input type="url" name="url" placeholder="htps://dominio.com.ar">
+                    <input list="browser" name="databrowser">
+                    <datalist id="browser" name="databrowser">
 
-                <input type="text" name="nombre" placeholder="Ingrese algo"required pattern="0-9">
+                        <option>Edge</option>
+                        <option>Chrome</option>
+                        <option>Firefox</option>
+                        <option>Opera</option>
 
-                <input type="submit" value="Enviar">
+                    </datalist>
+                </form>
 
-            </form>
+            </fieldset>
 
         </section>
 
