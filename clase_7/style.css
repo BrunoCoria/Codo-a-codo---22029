@@ -1,0 +1,17 @@
+body {
+    background: rgb(0, 255, 221);
+}
+
+/* Aplicar estilo por ID */
+#idsection {
+    background: #789
+}
+
+#nav {
+    background: #9ad
+}
+
+/* Estilos para clases */
+.link {
+    background: #3a9
+}
