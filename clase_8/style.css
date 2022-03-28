@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* 
+* { 
+    font-family: 'Roboto'
+}
+*/
+
+h1 {
+    /* Tamaño de letra */
+    font-size: 50px;
+
+     /* Tipo de fuente */
+     font-family: 'Roboto', sans-serif;
+
+     /* Estilo */
+     font-style: italic;
+
+     /* Grosor del texto */
+     font-weight: 600;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+#nosotros {
+    font-family: 'Roboto'
+}
+
+nav ul {
+    color: blue;
+}
+
+nav ul li {
+    list-style: circle;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/* Propiedades de texto */
+.p {
+    letter-spacing: 10px;
+    text-align: justify;
+    word-spacing: 15px;
+     text-transform: capitalize; /* lowercase uppercase  */
+     text-decoration: /* underline overline line-through */;
+     text-decoration-color: red;
+     text-decoration: double;
+      text-decoration-style: solid /* wavy double */
+}
+
+h3 {
+    text-shadow: 1.5px 1.5px rgb(87, 87, 87) ;
+    border: 2px solid;
+    display: inline;
+    padding: 10px;
+    border-right-color: red;
+    border-bottom-color: blue;
+    border-left-color: yellow;
+    border-top-color: green;
+}
