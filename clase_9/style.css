@@ -1,0 +1,68 @@
+
+
+* {
+    margin: 0px;
+}
+
+.divbox {
+    margin: 15px;
+    border: 2px solid #000;
+    padding: 25px;
+    width: 45%;
+    /* div mida 500px restar 2*2 + 25*2 +10*2: -426px- */
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Centrar sec2 */
+#sec2 {
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+}
+
+/* Especificidad */
+/* !important > inline > id > clases */
+#sec1 h3 {
+    color: aqua;
+}
+
+#sec1 {
+    color: blue;
+}
+
+/* MEDIDAS 
+    > absolutas: 1px = 0.26mm
+                  mm
+                  cm
+                  pt = puntos 0.35mm
+                  im = pulgadas 2.54cm
+                  pc = pica 4.23mm
+
+    > relativas: em = div 10px > 1em = 10px
+                 rem = root element <html> = 16px
+
+    > flexibles: vw = viewport width
+                 vh = viewport height
+*/
+
+.medidas {
+    font-size: 10px;
+}
+
+.medidas h3 {
+    font-size: 3em; /* 3em = 30px */
+}
+
+.medidas p {
+    font-size: 1.em;
+}
+
+/* Posicionamiento */
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background: #ff0000;
+    position: fixed;
+}
