@@ -1,0 +1,30 @@
+
+
+/* Pseudo clases */
+/* visited */
+a:visited {
+    color: red;
+}
+
+/* hover */
+a:hover {
+    color: blue;
+    text-decoration:line-through;
+}
+
+a:active {
+    color: green;
+}
+
+/* nth-child() */
+/* Seleccionar hijos */
+div p:nth-child(1) {
+    color: green;
+    font-size: 2em;
+}
+
+/* Dar color a los hijos impares */
+div p:nth-child(odd) {
+    color: yellow;
+}
+

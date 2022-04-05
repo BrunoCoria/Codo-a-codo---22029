@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* Selectores por atributo */
+        [href] {
+            background-color: blueviolet;
+        }
+
+        /* Elementos con contenido exacto */
+        [href="nosotros.html"] {
+            color: red;
+        }
+
+        /* Comience con algo */
+        [href^="i"] {
+            background-color: aqua;
+        }
+
+        /* Que contenga algo */
+        [href*="s"] {
+            background-color: violet;
+        }
+
+        /* Que termine con algo */
+        [href$="e"] {
+            text-decoration: line-through;
+        }
+
+        /* Seleccionar por alt */
+        img[alt="penguin"] {
+            border: 3px solid;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="home">Home</a>
+                </li>
+                <li>
+                    <a href="nosotros">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+                <li>
+                    <a href="imagenes">Imágenes</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBqGr7-ZpieUuEJ_YkUwi-rcHFwgYfqxFf1w&usqp=CAU" alt="penguin">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsI7gMxNbM15aBMTRiDKuQ2TbApQfzYlWH-A&usqp=CAU" alt="dab😎🤙">
+
+    </section>
+
+</body>
+</html>
