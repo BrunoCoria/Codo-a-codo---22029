@@ -24,7 +24,7 @@ div p:nth-child(1) {
 }
 
 /* Dar color a los hijos impares */
-div p:nth-child(odd) {
+div p:nth-child(4) {
     color: yellow;
 }
 
