@@ -9,87 +9,110 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
 
-
 </head>
 <body>
-
+    
     <header class="header">
 
-        <div class="header__div">
-            <a href="#"> <img class="logo" src="img/codoacodo.png" alt="Codo a codo"> </a>
+        <div class="header__grid">
 
-            <a href="#"><p>Conf Bs As</p></a>
+            <div class="div__logo">
+                <a href="#"> <img class="logo" src="./img/codoacodo.png" alt="Codo a codo"> </a>
+                <p class="logo__p">Conf Bs As</p>
+            </div>
+
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li> <a href="#"> La conferencia </a> </li>
+                    <li> <a href="#"> <span class="span__gris">Los oradores</span> </a> </li>
+                    <li> <a href="#"> <span class="span__gris">El lugar y la fecha</span> </a> </li>
+                    <li> <a href="#"> <span class="span__gris">Conviértete en orador</span> </a> </li>
+                    <li> <a href="#"> <span class="span__verde">Comprar tickets</span> </a> </li>
+                </ul>
+            </nav>
+
         </div>
 
-        <nav class="header__nav">
-
-            <ul class="nav__ul">
-
-                <li> <a href="#"> La conferencia </a> </li>
-                <li> <a href="#"> <span class="span_gris">Los oradores</span> </a> </li>
-                <li> <a href="#"> <span class="span_gris">El lugar y la fecha</span> </a> </li>
-                <li> <a href="#"> <span class="span_gris">Conviértete en orador</span> </a> </li>
-                <li> <a href="#"> <span class="span_verde">Comprar tickets</span> </a> </li>
-
-            </ul>
-
-        </nav>
-
     </header>
-    
+
     <main class="main">
 
-        <div class="background-image">
+        <section class="main__section1">
 
-            <div class="opacity">
+            <div class="bg">
 
-                <section class="section1">
-                    <div class="section1__div1">
-                        <h1 class="section1__title"s>Conf Bs As</h1>
-                        <p class="section1__p"s>Bs As llega por primera vez a Argentina. Un evento para compratir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                <div class="section1__div">
+
+                    <h1 class="section1__title">Conf Bs As</h1>
+                    <p class="section1__text">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+    
+                    <div class="section__buttons">
+                    <p class="button-1">Quiero ser orador</p>
+                    <p class="button-2">Comprar tickets</p>
                     </div>
-                    <div class="section1__div2">
-                        <p class="boton1">Quiero ser orador</p>
-                        <p class="boton2">Comprar tickets</p>
-                    </div>
-                </section>
+    
+                </div>
 
             </div>
 
-        </div>
+        </section>
 
         <section class="section2">
 
-            <p class="section2__p">CONOCE A LOS</p>
-            <h2 class="section2__title">ORADORES</h2>
+            <div>
+                <p class="section2__p">CONOCE A LOS</p>
+                <h2 class="section2__h2">ORADORES</h2>
+            </div>
 
-            <div class="section2__container">
+            <div class="section2__grid">
 
-                <article class="article">
-                    <div class="container-img"> <img src="img/steve.jpg" alt=""> </div>
+                <article class="article article1">
+
+                    <img class="article2__img" src="./img/steve.jpg" alt="Steve Jobs">
+    
+                    <div class="article__div"><p class="js">JavaScript</p> <p class="react">React</p> </div>
+    
                     <div class="article__content">
-                        <div class="container__botones"><p class="boton__java">JavaScript</p> <p class="boton__react">React</p></div>
+
                         <h3>Steve Jobs</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatibus nemo minima et optio, temporibus eum itaque distinctio? Sed perferendis magnam dolore fugiat explicabo doloremque ratione, minima possimus at ex!</p>
+    
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab fugit tenetur eligendi eaque officiis magnam expedita consectetur unde officia, tempore consequatur in iste enim? Ipsam amet non quo dicta est! </p>
+
                     </div>
+    
                 </article>
     
-                <article class="article">
-                    <div class="container-img"> <img src="img/bill.jpg" alt=""> </div>
+                <article class="article article2">
+    
+                    <img class="article2__img" src="./img/bill.jpg" alt="Bill Gates">
+    
+                    <div class="article__div"><p class="js">JavaScript</p> <p class="react">React</p> </div>
+    
                     <div class="article__content">
-                        <div class="container__botones"><p class="boton__java">JavaScript</p> <p class="boton__react">React</p></div>
+
                         <h3>Bill Gates</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae est veniam nostrum facere sequi quidem distinctio accusantium omnis! Ex atque qui obcaecati soluta vel ea quis impedit cumque quam nihil?</p>
+    
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab fugit tenetur eligendi eaque officiis magnam expedita consectetur unde officia, tempore consequatur in iste enim? Ipsam amet non quo dicta est!</p>
+
                     </div>
+    
                 </article>
     
-                <article class="article">
-                    <div class="container-img"> <img src="img/ada.jpeg" alt=""> </div>
+                <article class="article article3">
+    
+                    <img class="article2__img" src="./img/ada.jpeg" alt="Steve Jobs">
+    
+                    <div class="article__div"><p class="negocios">Negocios</p> <p class="startups">Startups</p> </div>
+    
                     <div class="article__content">
-                        <div class="container__botones"><p class="boton__negocios">Negocios</p> <p class="boton__startups">Startups</p></div>
+
                         <h3>Ada Lovelace</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit minima sapiente modi facilis ad saepe! Sed modi non minima nostrum architecto mollitia officiis exercitationem quis sit quos! Tempora, velit ducimus.</p>
+    
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab fugit tenetur eligendi eaque officiis magnam expedita consectetur unde officia, tempore consequatur in iste enim? Ipsam amet non quo dicta est!</p>
+    
+
                     </div>
+
                 </article>
 
             </div>
@@ -98,58 +121,93 @@
 
         <section class="section3">
 
-            <div class="section3__img"> <img src="img/honolulu.jpg" alt="Honolulu playa"> </div>
+            <div class=section3__grid>
 
-            <div class="section3__div">
+                <div class="section3__img"> <img class="playa" src="./img/honolulu.jpg" alt="PLaya Honolulu"> </div>
 
-                <h2>Bs As - Octubre</h2>
-                <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km<span class="sup">2</span> de superficie).</p>
-
-                <p class="section3__boton">Conocé más</p>
+                <div class="section3__div">
+                    <h2>Bs As - Octubre</h2>
+                    <p clñass="section3__text">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unido. Honolulu es la más sureña de entre las principales ciudad estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
+                    <p class="section3__button">Conocé más</p>
+                </div>
 
             </div>
-
-
 
         </section>
 
     </main>
+<!-- se que no debería pero es para solucionar lo del form por ahora -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <section class="section4">
 
-    <section>
+        <div class="section4__title">
 
-        <p>CONVIÉRTETE EN UN</p>
-        <h2>ORADOR</h2>
-        <p>Anótate como orador para dar una <span>charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+            <p>CONVIÉRTETE EN UN</p>
+            <h2>ORADOR</h2>
+            <p style="font-size: 2rem;">Anótate como orador para dar una <span class="ignite">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
 
-        <form class="formulario">
+        </div>
+
+        <form class="form">
 
             <fieldset>
 
-                <div class="contenedor__campos">
+                <div class="contenedor-campos">
 
                     <div class="campo">
-                        <input placeholder="Nombre">
+                        <input type="text" placeholder="Nombre" class="input-text">
+                    </div> 
+            
+                    <div class="campo">
+                        <input type="text" placeholder="Apellido" class="input-text">
+                    </div>
+            
+                    <div class="campo campo__textarea">
+                        <textarea placeholder="Sobre qué quieres hablar?" class="input-text"></textarea>
                     </div>
     
-                    <div class="campo">
-                        <input placeholder="Apellido">
-                    </div>
-    
-                    <div class="campo">
-                        <textarea placeholder="Sobre qué quieres hablar?"></textarea>
+                    <p class="form__p">Recuerda incluir un título para tu charla</p>
+            
+                    <div class="campo campo__button">
+                        <input type="submit" class="submit">
                     </div>
 
                 </div>
-
-                <p>Recuerda incluir un título para tu charla</p>
-
-                <input type="submit" class="submit">
 
             </fieldset>
 
         </form>
 
     </section>
+
+    <footer class="footer">
+
+        <nav class="footer__nav">
+
+            <ul class="footer__ul">
+                <li class="footer__li"> <a href="#">Preguntas frecuentes</a> </li>
+                <li class="footer__li"> <a href="#">Contáctanos</a> </li>
+                <li class="footer__li"> <a href="#">Prensa</a> </li>
+                <li class="footer__li"> <a href="#">Conferencias</a> </li>
+                <li class="footer__li"> <a href="#">Términos y condiciones</a> </li>
+                <li class="footer__li"> <a href="#">Privacidad</a> </li>
+                <li class="footer__li"> <a href="#">Estudiantes</a> </li>
+            </ul>
+
+        </nav>
+
+    </footer>
 
 </body>
 </html>

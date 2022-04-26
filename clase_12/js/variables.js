@@ -65,7 +65,7 @@ perro = {
 
 console.log(perro, typeof perro);
 
-let gato = null;
+let gato = e;
 // gato.edad= 100;
 console.log(gato, typeof gato);
 
@@ -141,3 +141,4 @@ console.log(Number(ValFlotante)) //Number también
 // .toUpperCase pone el string en mayúsculas
 // .toLowerCase pone el string en minúsculas
 // length cuenta los caracteres del string
+

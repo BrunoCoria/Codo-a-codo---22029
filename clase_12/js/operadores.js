@@ -46,5 +46,3 @@ let y = 20;
 
 let xMayory = (x > y);
 console.log(xMayory);
-
-
