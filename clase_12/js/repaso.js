@@ -1,105 +1,111 @@
-// Variables
+// Array
+let nombres = ['Alejandro', 'Juan', 'Natalia', 'Sofia'];
+let tamaño = nombres.length;
 
 // Estructura de iteración
-let alumnos = ['alan', 'alejandro', 'daiana', 'daniel'];
-
-// Hay 4 elementos
-// alan = 0
-// alejandro = 1
-// daiana = 2
-// daniel = 3
-
-// array.length = saber la cantidad de objetos en el array
-let tamanio = alumnos.length;
-console.log(tamanio);
-
 // Recorrer el array de nombres y mostrar cada uno 
-for(let i= 0; i < tamanio; i++ ) {
-    console.log(i, alumnos[i], typeof alumnos[1]);
+// FOR
+for(let i = 0; i < tamaño; i++) {
+    console.log(i, nombres[i], typeof nombres);
 }
 
 // foreach
-for(let nombre of alumnos) {
-    console.log(nombre);
+for(let nombre of nombres) {
+    console.log(nombre, typeof nombre); //No necesita índice
 }
 
 // while
-console.log('while 1')
 let i = 0;
-while(alumnos[i] !=='daiana') {
-    console.log(i, alumnos[i]);
-    i++; //Debemos incrementar el índice que usamos para recorrer el vector
+while(nombres[i] !== 'Sofia') {
+    i++;
+    console.log(nombres[i]);
 }
 
-
-console.log('while 2');
-i=0; //reset del índice
-while( i < tamanio) {
-
-    if(alumnos[i] === 'daiana'){
-        console.log(i, 'daiana');
-        break; //sale del ciclo while
+i = 0;
+while(i < tamaño) {
+    if(nombres[i] == 'Sofia') {
+        console.log(i, 'Sofia');
+        break
     }
     i++;
 }
 
-// Ahora con objetos
-let alumnosObj = [
+// Objetos 
+let personasObj = [
     {
         edad: 25,
-        nombre: 'jose',
+        nombre: 'pedro'
     },
     {
-        edad: 24,
-        nombre: 'martin',
+        edad: 30,
+        nombre: 'valentina'
     },
     {
-        edad: 35,
-        nombre: 'maria'
+        edad: 27,
+        nombre: 'tobías'
     }
-];
+]
 
-// for / while do-while
-// ¿Cómo detecto el menor de los alumnos?
+// Detectar a la menor de las personas
 
 let primero = true;
-for(const alumnoObj of alumnosObj) {
+let personaMasJoven //Contiene a la personas más jóven
+for(const persona of personasObj) {
     if(primero) {
-        alumnoMasChico = alumnoObj;
+        personaMasJoven = persona;
         primero = false;
     }
-    // Si alumnoMasChico es menor a alumnoObj, entonces pasa a ser el nuevo menor
-    if(alumnoObj.edad < alumnoMasChico.edad) {
-        alumnoMasChico = alumnoObj;
+    // Si personaMasJoven es menor que persona, entonces pasa a ser la nueva persona más jóven
+    if(persona.edad < personaMasJoven) {
+        personaMasJoven = persona;
     }
 }
+console.log(personaMasJoven);
 
-// Al finalizar el ciclo for obtengo al menor
-console.log('alumno mas chico', alumnoMasChico);
-
-
-const vector = [ 1, 2, 1, 3, 4, 2, 1, 3, 4, 1, 2, 1, 3, 4, 1 ]
-
-let contador = 0;
-let pos =[];
-
-for(let i = 0; i < vector.length; i++) {
-    if(vector[i] === 3) {
+// Contar cuantas veces se repite el 3
+contador = 0;
+let pos = []; //Va a contener las posiciones en las que se repite el 3
+let numeros = [1, 2, 3, 3, 2, 5, 3, 1, 3, 2, 1, 4, 2, 3, 3, 2, 3, 1, 3, 2, 4];
+for(i = 0; i < numeros.length; i++) {
+    if(numeros[i] === 3) {
         contador++;
-        pos.push(i);
+        pos.push(i); //Obtener todas las posiciones en las que se repite el 3, en un objeto
+        // console.log([i]) //Mostrar la posición en la que se repite el 3
     }
 }
+console.log('cantidad de veces que se repite 3: ' + contador);
+console.log('posiciones de 3: '+ pos, typeof pos);
 
-console.log('cantidad de 3:', contador);
-console.log('posiciones',pos);
-
-// Filtrar los números > 2
-let mayoresA2 = [];
-for(let i of  vector) {
-    if(i > 2) {
-        mayoresA2.push(i);
+// Filtrar los números mayores a 2
+let mayorA2 = []
+for(i = 0; i < numeros.length; i++) {
+    if(numeros[i] > 2 ) {
+        mayorA2.push(numeros[i]);
     }
 }
-console.log(mayoresA2);
+console.log(mayorA2);
 
-// filter
+// Filter
+
+//let nombreVariable = nombreArray.filter(num => (condición que quiero > 2));
+// console.log(nombreVariable)
+
+let mayoresA2ConFilter = numeros.filter(num => num > 2); //Qué quiero
+console.log(mayoresA2ConFilter + ' con filter')
+
+// Variables que js evalua como false
+let aux = 0;
+if(aux) {
+    console.log('false');
+}
+
+let aux2 = undefined;
+if(aux2) {
+    console.log('false');
+}
+
+let aux3 = null;
+if(aux3) {
+    console.log('false');
+}
+
