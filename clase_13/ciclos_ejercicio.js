@@ -52,4 +52,21 @@ for(const aux of errores) {
 
 // personas.forEach(aux => console.log(aux));
 
+cantidadUsuarios = parseInt(prompt('Ingrese la cantidad de usuarios'));
+const usuarios = [];
+let i = 0;
 
+while(i < cantidadUsuarios.length) {
+    const nombreUsuario = prompt('Ingrese el nombre del usuario');
+    const apellidoUsuario = prompt('Ingrese el apellido del usuario');
+
+    usuarios.push(
+        {
+            nombre: nombreUsuario,
+            apellido: apellidoUsuario
+        }
+    );
+    i++;
+}
+
+console.log(usuarios);
