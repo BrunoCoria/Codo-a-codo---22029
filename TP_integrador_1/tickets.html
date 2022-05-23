@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Integrador</title>
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="normalize.css">
+
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="header__grid">
+
+            <div class="div__logo">
+                <a href="index.html" class="logo__p">Conf Bs As</a>
+            </div>
+
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li> <a href="#"> La conferencia </a> </li>
+                    <li> <a href="#"> <span class="span__gris">Los oradores</span> </a> </li>
+                    <li> <a href="#"> <span class="span__gris">El lugar y la fecha</span> </a> </li>
+                    <li> <a href="#"> <span class="span__gris">Conviértete en orador</span> </a> </li>
+                    <li> <a href="#"> <span class="span__verde">Comprar tickets</span> </a> </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    
+    <main class="main">
+
+        <section class="section1">
+
+            <div class="caja caja__blue">
+                <h2>Estudiante</h2>
+                <p>Tiene un descuento</p>
+                <p class="porcentaje">80%</p>
+                <p>* presentar documentación</p>
+            </div>
+
+            <div class="caja caja__green">
+                <h2>Trainee</h2>
+                <p>Tiene un descuento</p>
+                <p class="porcentaje">50%</p>
+                <p>* presentar documentación</p>
+            </div>
+
+            <div class="caja caja__yellow">
+                <h2>Junior</h2>
+                <p>Tiene un descuento</p>
+                <p class="porcentaje">15%</p>
+                <p>* presentar documentación</p>
+            </div>
+
+        </section>
+
+        <section class="section2">
+
+            <h3>Venta</h3>
+            <h1>VALOR DE TICKET $200</h1>
+
+            <form class="form">
+
+                <div class="input__div1">
+                    <input type="text" placeholder="Nombre" maxlength="20">
+                    <input type="text" placeholder="Apellido" maxlength="20">
+                </div>
+
+                <div class="input__div2">
+                    <input class="correo" type="text" placeholder="Correo" maxlength="40">
+                </div>
+
+                <div class="input__div3">
+                    <div class="cantidad">
+                        <label>Cantidad</label>
+                        <input class="cantidad-input" id="amountInput" type="number" min="1" max="10" placeholder="Cantidad">
+                    </div>
+                    
+                    <div class="categoria">
+                        <label>Categoria</label>
+                        <select id="select" class="categoria-select">
+                            <option disabled selected>Seleccione una categoria</option>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
+                            <option value="4">Ninguno</option>
+                        </select>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="total-pagar">
+                <p id="total">Total a Pagar: $</p>
+            </div>
+
+            <div class="buttons">
+                <button id="deleteButton">Borrar</button>
+                <button id="resumeButton">Resumen</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <nav class="footer__nav">
+
+            <ul class="footer__ul">
+                <li class="footer__li"> <a href="#">Preguntas frecuentes</a> </li>
+                <li class="footer__li"> <a href="#">Contáctanos</a> </li>
+                <li class="footer__li"> <a href="#">Prensa</a> </li>
+                <li class="footer__li"> <a href="#">Conferencias</a> </li>
+                <li class="footer__li"> <a href="#">Términos y condiciones</a> </li>
+                <li class="footer__li"> <a href="#">Privacidad</a> </li>
+                <li class="footer__li"> <a href="#">Estudiantes</a> </li>
+            </ul>
+
+        </nav>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
