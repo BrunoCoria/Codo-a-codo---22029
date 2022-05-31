@@ -144,7 +144,19 @@ while(a <= cantidadNumeros) {
  console.log(numerosFavoritos);
 
 
+const SumarButton = document.getElementById('button');
 
+function primerNum(first) {
+    function segundoNum(second) {
+        console.log(primerNum + segundoNum)
+    }
+    return segundoNum;
+}
+
+SumarButton.addEventListener('click', () => {
+    const sumar = primerNum(5);
+    sumar(3);
+})
  
 
 

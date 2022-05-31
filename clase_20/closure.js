@@ -35,6 +35,26 @@ function adder(first) {//5
 }
 
 document.getElementById('btnSumar').addEventListener('click',() => {
-    const primerLlamado = adder(10); // add(secound);
+    const primerLlamado = adder(15); // add(secound);
     primerLlamado(5);//invoco a la funcion que me retorno la llamada anterior
+});
+
+/*closure */
+function outer() {
+    const endpoint = 'https://reqres.in/api/users';
+    async function inner(page) {
+        if(!page) {
+            page = 1;
+        }
+        return await axios.get(`${endpoint}?page=${page}`);
+    }
+    return inner;
+}
+
+
+document.getElementById('btnAxiosRequest').addEventListener('click',async () => {
+    //invocar
+    const fnInner = outer(); // > retornar la referencia a inner esperando a ingresar el valor(page)
+    const jsonObject = await fnInner(1);
+    alert(JSON.stringify(jsonObject));
 });
