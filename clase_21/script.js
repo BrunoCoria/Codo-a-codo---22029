@@ -23,6 +23,7 @@ btnResta.addEventListener('click',() => {
  btnDivision.addEventListener('click',() => {
      calcular('/');
  });
+
 function calcular(operacionMatematica){
     //tomo el valor del input a
     const valorA = a.value; //string > number
@@ -74,12 +75,12 @@ btn.addEventListener('click',() => {
     }
 });
 */
-function actualizarResultado(suma) {
+function actualizarResultado(resultado) {
     //capturo el div por su id
     const div = document.getElementById('resultado');
     div.className = 'resultado';
     //actualizo el contenido del div con la variable suma
-    div.innerHTML = suma;
+    div.innerHTML = resultado;
 }
 
 function sumar(a,b) {
